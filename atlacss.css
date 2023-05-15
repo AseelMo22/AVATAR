@@ -1,0 +1,302 @@
+
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    background: url("../atlapics/iceberg.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    
+  .leftel{
+    float: left;}
+.air{
+    margin-bottom: 200px;
+    animation: air 5s infinite;
+    animation-fill-mode:both;}
+
+.water{
+animation: water 5s infinite;
+animation-fill-mode: forwards;
+}  
+  .rightel{
+    float: right;
+  }
+  .earth{
+    margin-bottom: 200px;
+    animation: earth 5s infinite;
+    animation-fill-mode:both;
+  }
+ 
+/*animation*/
+@keyframes air {
+    0%    {  transform:rotate(0deg);  opacity:   1;  }
+    100%  {transform:rotate(360deg); opacity:  1;  }
+    
+}
+
+@keyframes water{
+    0%     {  opacity:   0;  }
+    50% {  opacity:   1;  }
+    75% {  opacity:   0;  }
+    100%  { opacity:  1;  }
+    
+}
+ @keyframes earth{
+    0% 	{transform:scale(1); opacity: 0; }
+    50% {transform:scale(2);opacity: 1;}
+    100%    {transform:scale(1); opacity: 1;}
+ }
+
+    .text{
+    top: 100px;
+    font-style:bold ;
+    text-align: center;
+    font-size: larger;
+}
+
+.logo{
+    position: absolute;
+    top:100px;
+    left: 600px;
+   
+}
+.mapp{
+    position: relative;
+    top: 330px;
+    left: 490px;
+    background-color: transparent;
+    
+}
+.pgrid_container {
+	width:auto;
+   align-content: center;
+  
+	position: relative;
+    margin-top: 100px;
+}
+
+.themevid{
+  
+    position: absolute;
+    align-content: center;
+  left:490px;
+    
+}
+
+
+
+.links{
+        background-color: orange; 
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      
+.links li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 30px;
+      }
+
+
+
+      /* timeline  */
+
+      
+.button {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	background: blue;
+	position: absolute;
+	top: 50px;
+	left: 20px;
+}
+
+.menu {
+	width: 300px;
+	height: 650px;
+	background: gray;
+	position: absolute;
+	top: 400px;
+	display: none;
+}
+
+.backtime {
+	background: tan;
+}
+
+/*map*/
+.backmap{
+width: 100%;
+height: 100%;
+background-color: transparent;
+background: url("../atlapics/appaflyingback.jpg") center;
+background-size: cover;
+background-attachment: scroll;
+}
+
+/*characters*/
+.charactergrid{
+    margin-top: 400px;
+    margin-left: 340px;
+    padding: auto;
+
+}
+.ctext{
+    font-size: x-large;
+    text-align: center;
+}
+/*
+
+text elements
+.author{
+    font-family: comic-serif-pro, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    color:white;
+}
+.author span{
+    font-size: 30px;
+}
+
+.james{
+    font-family: ff-providence-web-pro, sans-serif;
+    font-style:normal;
+    font-weight:600;
+    font-size: 24px;
+    color:#fbdf08 ;
+}
+
+.illustrated{
+    font-family: comic-serif-pro, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color:  rgb(223, 221, 221);
+    
+}
+
+.text{
+    float: right;
+    position: relative;
+    margin-top:200px;
+    left:-25px;
+    text-align: center;
+}
+.pgrid_container {
+	width: 400px;
+	height: 600px;
+    background-color:#92c3bf;
+	position: relative;
+    left: 38%;
+	top: 20%;
+    margin-top: -100px;
+    overflow: hidden;
+}
+
+.B{
+    position: relative;
+    top:28%;
+    animation: B 2s ease-in;
+    animation-fill-mode:forwards;
+}
+
+.P{
+    width: 100px;
+    height: 100px;
+    position:relative;
+    top:-540px;
+    animation: P 3s ease-in;
+    animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    transition-property: all;
+}
+   
+.prot{
+    animation: prot 4s ease-in;
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    
+}    
+     
+.Heli1{
+    
+    position: relative;
+    float: right;
+    top: -450px;
+    left:100px;
+    animation: H1 3s ease;
+    animation-fill-mode:forwards;
+    cursor: pointer;
+}
+
+.Heli1:hover {
+    transform: rotateX(180deg);
+    position: relative;
+    
+}
+
+.Heli2{
+    position:relative;
+    float: left;
+    animation-fill-mode:forwards;
+    animation: H2 4s infinite ease-in-out ;
+    
+}
+
+
+ Animation stuff
+
+@keyframes leftel {
+    0%    {  transform:rotate(0deg)  opacity:   1;  }
+    50%  {transform:rotate(360deg) opacity:  1;  }
+    75% { transform:rotate(-360deg) opacity:  1;  }
+    100% { transform:rotate(360deg) opacity:  1;  }
+
+}
+@keyframes P {
+	0% 	{transform:scale(0);top:-500px; opacity: 0; }
+    50% {transform:scale(0.5);top:-480px; opacity: 1;}
+    100%    {transform:scale(1);top:-420px; opacity: 1;}
+	
+}
+
+@keyframes prot{
+    0% {transform:rotate(0deg); opacity: 0; }
+    25% {transform:rotate(-360deg); opacity: 1;}
+    50% {transform:rotate(0deg);  opacity: 1;}
+    100% {transform:rotate(-360deg);  opacity: 1;}
+
+}
+
+@keyframes H1{
+    0%    {top:-450px; left:100px; opacity: 0; }
+    25%    {top:-480px; left:-50px; opacity: 1; }
+    50%    {top:-500px; left:-30px; opacity: 1; }
+    100%    {top:-520px; left:-60px; opacity: 1; }
+    
+}
+
+@keyframes H2{
+    0% 	{transform:scale(0);top:-250px; left:-250px; opacity: 0; }
+    50% {transform:scale(0.4);top:-300px; left:60px; opacity: 1;}
+    100%    {transform:scale(0);top:-250px; left:250px; opacity: 1;}
+}
+
+
+/*
+
+
+
+    
